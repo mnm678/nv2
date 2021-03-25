@@ -35,6 +35,11 @@ Users may want to verify that multiple parties have signed an image (per scenari
 
 Multi-role delegations allow an organization to delegate to a combination of roles, and require that these roles agree on the contents of an image. So, company A could delegate to security and development for packages, and these packages would be used only if both teams agreed on the image contents. This mechanism could be used for signatures that have been copied from another registry to ensure that the previous signatory, and the copier have both signed the image.
 
+
+<img src="images/Multiple_signatures.jpg">
+
+In the example above, a user specifies that they would like to verify Artifact 2 using a threshold of signatures from both Wabbit Networks and Acme Rockets. The user will verify the targets metadata from both companies, and ensure that they are referring to the same artifact hash.
+
 ### Client Customizations
 
 For some client use cases, slight modifications are needed to the above workflow. These modifications do not affect metadata or images on the registry, but allow clients greater flexibility when interacting with the system.
